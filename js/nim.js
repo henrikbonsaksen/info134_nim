@@ -12,7 +12,7 @@ maxGrab: 1; (heltall) if not an argument, maxGrab == 3.
 
 
 
-halla mahtestmoud
+
 
 
 this.player1 = player1;
