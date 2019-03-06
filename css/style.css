@@ -1,0 +1,55 @@
+html{
+  width:100%;
+  height:auto;
+  background:rgba(0,0,0,0.1);
+}
+#header{
+  position:relative;
+  text-align:center;
+  font-weight:900;
+  font-family: 'Open Sans', sans-serif;
+}
+#intro span{
+  font-weight:500;
+  font-family: 'Open Sans', sans-serif;
+}
+#board{
+  cursor:none;
+  position:relative;
+  text-align:center;
+}
+.stick, .p{
+  position:relative;
+  display:inline;
+}
+.row{
+  margin:10px 0px 10px 0px;
+  font-weight:500;
+  font-family: 'Open Sans', sans-serif;
+}
+.stick{
+  height:auto;
+  width:auto;
+  padding:2px;
+  background:rgba(0,0,0,0.7);
+  border:0px;
+  border-radius:2px;
+  box-shadow:inset 0px 0px 3px rgba(0,0,0,1);
+  color:rgba(255,255,255,1);
+}
+.row span{
+  float:left;
+  color:rgba(0,0,0,0.3);
+  cursor:none;
+}
+#playerConsol{
+  width:100%;
+  position:relative;
+  text-align:center;
+  font-weight:500;
+  font-family: 'Open Sans', sans-serif;
+}
+.player{
+  padding:2px;
+  background:#00ff00;
+}
