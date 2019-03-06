@@ -7,12 +7,12 @@ victory: function() {
         return finish + vinner;
     }
 }.
-total: 10; (heltall) // Antall felles klinkekuler i starten. 
+total: 10; (heltall) // Antall felles klinkekuler i starten.
 maxGrab: 1; (heltall) if not an argument, maxGrab == 3.
 
 
 
-
+hei
 
 
 
