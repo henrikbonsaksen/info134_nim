@@ -1,27 +1,29 @@
 
 body {
-  background-color: red;
+  background-color: white;
 }
 
-#header {
-  color: blue;
+header {
+  font: ;
+  background-color: #3392FF;
+  color: white;
+  border: orange;
 }
 
-.button1 {padding: 32px; border-radius: 50%;}
-.button2 {padding: 32px; border-radius: 50%;}
-.button3 {padding: 32px; border-radius: 50%;}
-.button4 {padding: 32px; border-radius: 50%;}
-.button5 {padding: 32px; border-radius: 50%;}
 
+.button {
+  padding: 32px;
+  border-radius: 50%;
+  background-color: #3392FF;
+}
 
-.buttonRow1 {
+.buttonRow {
   display: block;
 }
 
-.buttonRow2 {
-  display: block;
-}
-
-.buttonRow3 {
-  display: block;
+.button:hover {
+background-color: #A033FF;
+color: white;
+-webkit-transition-duration: 0.4s;
+transition-duration: 0.4s;
 }

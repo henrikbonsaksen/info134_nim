@@ -29,9 +29,9 @@ for (var nøkkel in spill) {
 }
 
 
-function marble() {
-   var buttons = document.getElementById("marble");
+function changeState() {
+   var buttons = document.getElementById(".button1");
    buttons.innerHTML = '<img src="../img/buttn.jpg" />';
 }
 
-var x = document.getElementById("myImg").alt;
+// var x = document.getElementById("myImg").alt;
