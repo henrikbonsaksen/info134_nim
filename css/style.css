@@ -6,3 +6,22 @@ body {
 #header {
   color: blue;
 }
+
+.button1 {padding: 32px; border-radius: 50%;}
+.button2 {padding: 32px; border-radius: 50%;}
+.button3 {padding: 32px; border-radius: 50%;}
+.button4 {padding: 32px; border-radius: 50%;}
+.button5 {padding: 32px; border-radius: 50%;}
+
+
+.buttonRow1 {
+  display: block;
+}
+
+.buttonRow2 {
+  display: block;
+}
+
+.buttonRow3 {
+  display: block;
+}

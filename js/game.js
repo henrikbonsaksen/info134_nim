@@ -33,3 +33,5 @@ function marble() {
    var buttons = document.getElementById("marble");
    buttons.innerHTML = '<img src="../img/buttn.jpg" />';
 }
+
+var x = document.getElementById("myImg").alt;
