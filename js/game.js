@@ -28,9 +28,8 @@ for (var nøkkel in spill) {
   console.log(verdi.gamer);
 }
 
-<button id="button"></button>
 
-<script type="text/javascript">
-    var buttons = document.getElementById("button");
-    buttons.innerHTML = '<img src="images\ok.png" />';
-</script>
+function marble() {
+   var buttons = document.getElementById("marble");
+   buttons.innerHTML = '<img src="../img/buttn.jpg" />';
+}
