@@ -27,3 +27,10 @@ for (var nøkkel in spill) {
   var verdi = spill[nøkkel];
   console.log(verdi.gamer);
 }
+
+<button id="button"></button>
+
+<script type="text/javascript">
+    var buttons = document.getElementById("button");
+    buttons.innerHTML = '<img src="images\ok.png" />';
+</script>
