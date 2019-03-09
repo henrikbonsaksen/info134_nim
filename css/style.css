@@ -1,29 +1,48 @@
 
+html {
+  background: #C6FFDD;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #f7797d, #FBD786, #C6FFDD);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #f7797d, #FBD786, #C6FFDD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
 body {
-  background-color: white;
+  font-family: calibri;
 }
 
 header {
-  font: ;
-  background-color: #3392FF;
-  color: white;
+  margin: 0px 50px;
+  width: auto;
+  color: #f7797d;
   border: orange;
 }
 
 
 .button {
-  padding: 32px;
+  border: 2px solid #f4494e;
+  padding: 15px 21px;
   border-radius: 50%;
-  background-color: #3392FF;
+  background-color: #f7797d;  /* fargen inne i knappene */
+
+  font-size: 25px;
+  font-weight: bold;
+  color: #C6FFDD;
 }
 
 .buttonRow {
   display: block;
+  max-width: 400px;
+  margin: 10px 50px;
 }
 
 .button:hover {
-background-color: #A033FF;
+-webkit-transition-duration: 0.5s;
+transition-duration: 0.5s;
+background-color: #faa9ac;
+border: 2px solid #f7797d;
 color: white;
--webkit-transition-duration: 0.4s;
-transition-duration: 0.4s;
+
+}
+
+.game {
 }
