@@ -11,38 +11,66 @@ body {
 }
 
 header {
-  margin: 0px 50px;
+  padding: 3px 1%;  /* plassering */
   width: auto;
   color: #f7797d;
-  border: orange;
 }
 
 
 .button {
-  border: 2px solid #f4494e;
-  padding: 15px 21px;
-  border-radius: 50%;
+  border: 2px solid #f4494e; /* border */
+  padding: 15px 21px; /* størrelse på knapp */
+  border-radius: 50%; /* avrunding av knapp */
   background-color: #f7797d;  /* fargen inne i knappene */
-
-  font-size: 25px;
-  font-weight: bold;
-  color: #C6FFDD;
+  font-size: 25px; /* font størrelse: */
+  font-weight: bold; /* font egenskaper: */
+  color: #C6FFDD; /* font farge: */
 }
 
 .buttonRow {
   display: block;
   max-width: 400px;
-  margin: 10px 50px;
+  padding: 3px 1%; /* plassering */
+  /* margin: 10px 50px; /* plassering */
 }
 
 .button:hover {
--webkit-transition-duration: 0.5s;
-transition-duration: 0.5s;
-background-color: #faa9ac;
-border: 2px solid #f7797d;
-color: white;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  background-color: #faa9ac;
+  border: 2px solid #f7797d;
+  color: white;
 
 }
 
 .game {
 }
+
+@media (max-width : 415px) {
+  header {
+    text-shadow: 2px 0px #C6FFDD;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  */
