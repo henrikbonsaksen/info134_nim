@@ -62,11 +62,11 @@ p {
 
 /* knapp på index for å gå til spillsiden */
 .playbutton {
-  border: 3px solid #f4494e; /* border */
-  padding: 21px 21px; /* størrelse på knapp */
+  border: 2px solid #f4494e; /* border */
+  padding: 14px 14px; /* størrelse på knapp */
   border-radius: 5%; /* avrunding av knapp */
   background-color: #f7797d;  /* fargen inne i knappene */
-  font-size: 25px; /* font størrelse: */
+  font-size: 15px; /* font størrelse: */
   font-weight: bold; /* font egenskaper: */
   color: #C6FFDD; /* font farge: */
 }
