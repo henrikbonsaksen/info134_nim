@@ -1,16 +1,14 @@
 
 // This is a constructor function that initializes new Nim objects.
 // // It does not create or return them, just initializes them.
-function Nim(player1, player2, victory, total, piles, maxGrab) {
+function Nim(player1, player2, victory, total, maxGrab) {
     this.player1 = player1;
     this.player2 = player2;
     this.victory = victory;
     this.total = total;
-    this.piles = piles;
     this.maxGrab = maxGrab;
 }
 
-var playArea = document.getElementById("canvas");
 
 // All Nim objects inherit from this object.
 
