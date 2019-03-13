@@ -5,42 +5,35 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Nim Game</title>
         <script type="text/javascript" src="../js/nim.js"></script>
-        <script type="text/javascript" src="../js/game.js"></script>
         <link rel="stylesheet" type="text/css" href="../css/style.css">
-
 
     </head>
     <body>
-        <header>
-            <h1> Spela lita NIM nu jävlar! </h1>
-        </header>
+      <header>
+          <h1> Spela lita NIM nu jävlar! </h1>
+      </header>
 
         <div class="game">
-          <div class="buttonRow">
+          <div class="buttonRowP1">
+            <p> player 1 </p>
             <button id="1_1" class="button">1</button>
             <button id="1_2" class="button">2</button>
             <button id="1_3" class="button">3</button>
-            <button id="1_4" class="button">4</button>
-            <button id="1_5" class="button">5</button>
           </div>
 
-          <div class="buttonRow">
-            <button class="button">1</button>
-            <button class="button">2</button>
-            <button class="button">3</button>
-            <button class="button">4</button>
-            <button class="button">5</button>
-          </div>
-
-          <div class="buttonRow">
-            <button class="button">1</button>
-            <button class="button">2</button>
-            <button class="button">3</button>
-            <button class="button">4</button>
-            <button class="button">5</button>
+          <div class="buttonRowP2">
+            <p> player 2 </p>
+            <button id="1_1" class="button">1</button>
+            <button id="1_2" class="button">2</button>
+            <button id="1_3" class="button">3</button>
           </div>
       </div>
 
+
+      <div class="score"
+            <p> total marbles </p>
+            Nim.total
+      </div>
 
          <!-- same class different ID! -->
         <!-- <div class="score-board">
@@ -48,5 +41,6 @@
             <div id="player2-label" class="badge"> computer </div>
             <span id="player1-score">0</span>:<span id="player2-score">0</span>
         </div> -->
+      <script type="text/javascript" src="../js/game.js"></script>
     </body>
 </html>

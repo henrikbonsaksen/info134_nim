@@ -6,6 +6,11 @@ html {
 
 }
 
+canvas {
+  border:1px solid #f7797d;
+  background-color: #FBD786;
+}
+
 body {
   font-family: calibri;
   color: #f7797d;
@@ -35,13 +40,23 @@ p {
   color: #C6FFDD; /* font farge: */
 }
 
-.buttonRow {
+.buttonRowP1 {
   display: block;
   max-width: 400px;
   padding: 3px 1%; /* plassering */
   /* margin: 10px 50px; /* plassering */
 }
 
+.buttonRowP2 {
+  display: block;
+  max-width: 400px;
+  padding: 3px 1%; /* plassering */
+  /* margin: 10px 50px; /* plassering */
+}
+
+.score {
+  font-size: 50px;
+}
 .button:hover {
   -webkit-transition-duration: 0.5s;
   transition-duration: 0.5s;
