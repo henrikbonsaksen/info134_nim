@@ -9,7 +9,8 @@ function Nim(player1, player2, victory, total, maxGrab) {
     this.maxGrab = maxGrab;
 }
 
-var game = new Nim("p1", "p2", 1, 5, 3)
+var game = new Nim("p1", "p2", 1, 13, 3)
+
 
 // All Nim objects inherit from this object.
 
@@ -38,6 +39,7 @@ function remove1() {
   if (total === victory) {
     Victory("player 1 ");
   }
+  return total;
 };
 
 function remove2() {
@@ -67,6 +69,7 @@ function remove1_2() {
   maxgrab-=1;
   console.log("fra", game.total,"til ",total)
   console.log(maxgrab)
+
   if (total === victory) {
     Victory("player 2 ");
   }
@@ -93,8 +96,7 @@ function remove3_2() {
 };
 
 
-
-// document.getElementById("score").innerHTML = total;
+document.getElementById("score").innerHTML = total;
 
 
 //     total: 10;  // total skal være et heltall.//
