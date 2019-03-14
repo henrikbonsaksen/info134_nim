@@ -1,6 +1,6 @@
 
-// This is a constructor function that initializes new Nim objects.
-// // It does not create or return them, just initializes them.
+// Konstruktør.
+// Lager ikke eller returnerer, kun initialiserer.
 function Nim(player1, player2, victory, total, maxGrab) {
     this.player1 = player1;
     this.player2 = player2;
@@ -11,15 +11,12 @@ function Nim(player1, player2, victory, total, maxGrab) {
 
 var game = new Nim("Henrik", "Mahmoud", 1, 15, 3)
 
-
-// All Nim objects inherit from this object.
-
 // var player1 = new Nim (name: "", human: True); // objekt med navn og om spilleren er menneske.
 // var player2 = new Nim (name: "", human: True); // objekt med navn og om spilleren er menneske.
 
 // Når spillet er avsluttet, skal spillobjektet kalle denne.
 
-
+// div variabler:
 var total = game.total;
 var maxgrab_p1 = game.maxGrab;
 var maxgrab_p2 = game.maxGrab;
@@ -27,18 +24,19 @@ var player1 = game.player1;
 var player2 = game.player2;
 var victory = game.victory;
 
+// innlasting til html:
 document.getElementById("player1_html").innerHTML = player1;
 document.getElementById("player2_html").innerHTML = player2;
 
+//funksjoner:
 function Victory(player) {
   document.getElementById("win").innerHTML = (player + " vinner!") ;
 };
 
-
+//funksjonalitet til knappene:
 function remove1() {
   total-=1;
   maxgrab_p1-=1;
-  console.log("fra", game.total,"til ",total)
   console.log("maxgrab1 ", maxgrab_p1, "to maxgrab 2:", maxgrab_p2)
   if (total === victory) {
     Victory(player1, " ");
@@ -47,13 +45,11 @@ function remove1() {
     maxgrab_p2 = 3;
   }
   document.getElementById("score").innerHTML = total;
-  return total;
 };
 
 function remove2() {
   total-=2;
   maxgrab_p1-=1;
-  console.log("fra", game.total,"til ",total)
   console.log("maxgrab1 ", maxgrab_p1, "to maxgrab 2:", maxgrab_p2)
   if (total === victory) {
     Victory(player1, " ");
@@ -67,7 +63,6 @@ function remove2() {
 function remove3() {
   total-=3;
   maxgrab_p1-=1;
-  console.log("fra", game.total,"til ",total)
   console.log("maxgrab1 ", maxgrab_p1, "to maxgrab 2:", maxgrab_p2)
   if (total === victory) {
     Victory(player1, " ");
@@ -83,7 +78,6 @@ function remove3() {
 function remove1_2() {
   total-=1;
   maxgrab_p2-=1;
-  console.log("fra", game.total,"til ",total)
   console.log(maxgrab_p2, " ", maxgrab_p1)
 
   if (total === victory) {
@@ -98,7 +92,6 @@ function remove1_2() {
 function remove2_2() {
   total-=2;
   maxgrab_p2-=1;
-  console.log("fra", game.total,"til ",total)
   console.log(maxgrab_p2, "", maxgrab_p1)
   if (total === victory) {
     Victory(player2, " ");
@@ -112,7 +105,6 @@ function remove2_2() {
 function remove3_2() {
   total-=3;
   maxgrab_p2-=1;
-  console.log("fra", game.total,"til ",total)
   console.log(maxgrab_p2, "", maxgrab_p1)
   if (total === victory) {
     Victory(player2, " ");
@@ -123,7 +115,7 @@ function remove3_2() {
   document.getElementById("score").innerHTML = total;
 };
 
-document.getElementById("kuler").innerHTML = total;
+document.getElementById("score").innerHTML = total;
 
 
 

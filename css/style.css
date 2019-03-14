@@ -6,14 +6,21 @@ html {
 
 }
 
-canvas {
-  border:1px solid #f7797d;
-  background-color: #FBD786;
+.overskrift {
+  padding: 0px 2%;
+  color: #f7797d;
+  font-size: 40px;
+  letter-spacing: 60px;
+}
+.under_overskrift {
+  padding: 0px 2%;
+  color: #f7797d;
+  font-size: 14px;
+  letter-spacing: 8px;
 }
 
 body {
   font-family: calibri;
-  color: #f7797d;
 }
 
 header {
@@ -23,34 +30,46 @@ header {
 }
 
 p {
-  padding: 3px 1%;
+  text-align: left;
   width: auto;
   color: #f7797d;
-  text-shadow: 0px 1px gray;
+  text-shadow: 0px -1px white;
+
+
 }
 
+
+
+.scoreboard {
+  text-align: center;
+  padding: 3px 3%;
+}
 
 .button {
   border: 2px solid #f4494e; /* border */
   padding: 15px 21px; /* størrelse på knapp */
-  border-radius: 50%; /* avrunding av knapp */
+  border-radius: 5%; /* avrunding av knapp */
   background-color: #f7797d;  /* fargen inne i knappene */
   font-size: 25px; /* font størrelse: */
   font-weight: bold; /* font egenskaper: */
-  color: #C6FFDD; /* font farge: */
+  color: white; /* font farge: */
+  text-shadow: 0px -1px black;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+
 }
 
 .buttonRowP1 {
   display: block;
   max-width: 400px;
-  padding: 3px 1%; /* plassering */
+  padding: 3px 3%; /* plassering */
   /* margin: 10px 50px; /* plassering */
 }
 
 .buttonRowP2 {
   display: block;
   max-width: 400px;
-  padding: 3px 1%; /* plassering */
+  padding: 3px 3%; /* plassering */
   /* margin: 10px 50px; /* plassering */
 }
 

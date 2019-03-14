@@ -9,7 +9,8 @@
     </head>
     <body>
       <header>
-          <h1> Spela lita NIM nu jävlar! </h1>
+          <h1> <p class="overskrift"> NIM </p></h1>
+          <h3><p class="under_overskrift"> Game on jävlar</p></h3>
       </header>
 
         <div class="game">
@@ -31,29 +32,16 @@
       </div>
 
 
-      <div>
+      <div class="scoreboard">
             <p>
-              <h2>
-                Totalt antall klinkekuler spillet starter med:
-                <p id="kuler"> </p>
-
-                <br>
-                <p> Foreløpig antall klinkekuler: </p>
+              <h2> <!-- Annonserer kulemengde og vinner -->
+                <p> Foreløpig antall klinkekuler: <h1><p id="score">  </p></h1><h1><p id="win"> </p></h1></p>
               </h2>
             </p>
 
-            <h1><p id="score">  </p></h1>
-            <h1><p id="win"> </p></h1>
       </div>
 
-         <!-- same class different ID! -->
-        <!-- <div class="score-board">
-            <div id="player1-label" class="badge"> user </div>
-            <div id="player2-label" class="badge"> computer </div>
-            <span id="player1-score">0</span>:<span id="player2-score">0</span>
-        </div> -->
       <script type="text/javascript" src="../js/game.js"></script>
       <script type="text/javascript" src="../js/nim.js"></script>
-
     </body>
 </html>
