@@ -36,7 +36,7 @@ function remove1() {
   console.log("fra", game.total,"til ",total)
   console.log(maxgrab)
   if (total === victory) {
-    Victory("player1 ");
+    Victory("player 1 ");
   }
 };
 
@@ -46,7 +46,7 @@ function remove2() {
   console.log("fra", game.total,"til ",total)
   console.log(maxgrab)
   if (total === victory) {
-    Victory("player1 ");
+    Victory("player 1 ");
   }
 };
 
@@ -56,7 +56,39 @@ function remove3() {
   console.log("fra", game.total,"til ",total)
   console.log(maxgrab)
   if (total === victory) {
-    Victory("player1 ");
+    Victory("player 1 ");
+  }
+};
+
+
+
+function remove1_2() {
+  total-=1;
+  maxgrab-=1;
+  console.log("fra", game.total,"til ",total)
+  console.log(maxgrab)
+  if (total === victory) {
+    Victory("player 2 ");
+  }
+};
+
+function remove2_2() {
+  total-=2;
+  maxgrab-=1;
+  console.log("fra", game.total,"til ",total)
+  console.log(maxgrab)
+  if (total === victory) {
+    Victory("player 2 ");
+  }
+};
+
+function remove3_2() {
+  total-=3;
+  maxgrab-=1;
+  console.log("fra", game.total,"til ",total)
+  console.log(maxgrab)
+  if (total === victory) {
+    Victory("player 2 ");
   }
 };
 
