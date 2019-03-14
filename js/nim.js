@@ -34,87 +34,102 @@ function Victory(player) {
 };
 
 //funksjonalitet til knappene:
-function remove1() {
-  total-=1;
-  maxgrab_p1-=1;
-  console.log("maxgrab1 ", maxgrab_p1, "to maxgrab 2:", maxgrab_p2)
-  if (total === victory) {
-    Victory(player1, " ");
-  }
-  if (maxgrab_p1 === 0) {
-    maxgrab_p2 = 3;
-  }
-  document.getElementById("score").innerHTML = total;
+if (game.total > 0) {
+  function remove1() {
+    if (maxgrab_p1 > 0) {
+      total-=1;
+      maxgrab_p1-=1;
+      console.log(maxgrab_p1)
+      if (total === victory) {
+        Victory(player1, " ");
+      }
+      if (maxgrab_p1 === 0) {
+        maxgrab_p2 = 3;
+      }
+      document.getElementById("score").innerHTML = total;
+    }
+
+  };
+
+  function remove2() {
+    if (maxgrab_p1 > 0) {
+      total-=2;
+      maxgrab_p1-=1;
+      console.log(maxgrab_p1)
+      if (total === victory) {
+        Victory(player1, " ");
+      }
+      if (maxgrab_p1 === 0) {
+        maxgrab_p2 = 3;
+      }
+      document.getElementById("score").innerHTML = total;
+    }
+  };
+
+  function remove3() {
+    if (maxgrab_p1 > 0) {
+      total-=3;
+      maxgrab_p1-=1;
+      console.log(maxgrab_p1)
+      if (total === victory) {
+        Victory(player1, " ");
+      }
+      if (maxgrab_p1 === 0) {
+        maxgrab_p2 = 3;
+      }
+      document.getElementById("score").innerHTML = total;
+    }
+  };
+
+
+
+  function remove1_2() {
+    if (maxgrab_p2 > 0) {
+      total-=1;
+      maxgrab_p2-=1;
+      console.log(maxgrab_p2)
+
+      if (total === victory) {
+        Victory(player2, " ");
+      }
+      if (maxgrab_p2 === 0) {
+        maxgrab_p1 = 3;
+      }
+      document.getElementById("score").innerHTML = total;
+    }
+  };
+
+  function remove2_2() {
+    if (maxgrab_p2 > 0) {
+      total-=2;
+      maxgrab_p2-=1;
+      console.log(maxgrab_p2)
+      if (total === victory) {
+        Victory(player2, " ");
+      }
+      if (maxgrab_p2 === 0) {
+        maxgrab_p1 = 3;
+      }
+      document.getElementById("score").innerHTML = total;
+    }
+  };
+
+  function remove3_2() {
+    if (maxgrab_p2 > 0) {
+      total-=3;
+      maxgrab_p2-=1;
+      console.log(maxgrab_p2)
+      if (total === victory) {
+        Victory(player2, " ");
+      }
+      if (maxgrab_p2 === 0) {
+        maxgrab_p1 = 3;
+      }
+      document.getElementById("score").innerHTML = total;
+    }
+  };
+
 };
-
-function remove2() {
-  total-=2;
-  maxgrab_p1-=1;
-  console.log("maxgrab1 ", maxgrab_p1, "to maxgrab 2:", maxgrab_p2)
-  if (total === victory) {
-    Victory(player1, " ");
-  }
-  if (maxgrab_p1 === 0) {
-    maxgrab_p2 = 3;
-  }
-  document.getElementById("score").innerHTML = total;
-};
-
-function remove3() {
-  total-=3;
-  maxgrab_p1-=1;
-  console.log("maxgrab1 ", maxgrab_p1, "to maxgrab 2:", maxgrab_p2)
-  if (total === victory) {
-    Victory(player1, " ");
-  }
-  if (maxgrab_p1 === 0) {
-    maxgrab_p2 = 3;
-  }
-  document.getElementById("score").innerHTML = total;
-};
-
-
-
-function remove1_2() {
-  total-=1;
-  maxgrab_p2-=1;
-  console.log(maxgrab_p2, " ", maxgrab_p1)
-
-  if (total === victory) {
-    Victory(player2, " ");
-  }
-  if (maxgrab_p2 === 0) {
-    maxgrab_p1 = 3;
-  }
-  document.getElementById("score").innerHTML = total;
-};
-
-function remove2_2() {
-  total-=2;
-  maxgrab_p2-=1;
-  console.log(maxgrab_p2, "", maxgrab_p1)
-  if (total === victory) {
-    Victory(player2, " ");
-  }
-  if (maxgrab_p2 === 0) {
-    maxgrab_p1 = 3;
-  }
-  document.getElementById("score").innerHTML = total;
-};
-
-function remove3_2() {
-  total-=3;
-  maxgrab_p2-=1;
-  console.log(maxgrab_p2, "", maxgrab_p1)
-  if (total === victory) {
-    Victory(player2, " ");
-  }
-  if (maxgrab_p2 === 0) {
-    maxgrab_p1 = 3;
-  }
-  document.getElementById("score").innerHTML = total;
-};
-
 document.getElementById("score").innerHTML = total;
 
 
