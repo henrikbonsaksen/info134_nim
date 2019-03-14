@@ -16,23 +16,23 @@
         <div class="game">
           <div class="buttonRowP1">
             <p> player 1 </p>
-            <button id="1_1" class="button">1</button>
-            <button id="1_2" class="button">2</button>
-            <button id="1_3" class="button">3</button>
+            <button onclick="remove1()" id="1_1" class="button">1</button>
+            <button onclick="remove2()" id="1_2" class="button">2</button>
+            <button onclick="remove3()" id="1_3" class="button">3</button>
           </div>
 
           <div class="buttonRowP2">
             <p> player 2 </p>
-            <button id="1_1" class="button">1</button>
-            <button id="1_2" class="button">2</button>
-            <button id="1_3" class="button">3</button>
+            <button onclick="remove1()" id="1_1" class="button">1</button>
+            <button onclick="remove2()" id="1_2" class="button">2</button>
+            <button onclick="remove3()" id="1_3" class="button">3</button>
           </div>
       </div>
 
 
-      <div class="score"
+      <div>
             <p> total marbles </p>
-            Nim.total
+            <p id="score"> </p>
       </div>
 
          <!-- same class different ID! -->
