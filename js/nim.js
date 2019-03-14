@@ -9,7 +9,7 @@ function Nim(player1, player2, victory, total, maxGrab) {
     this.maxGrab = maxGrab;
 }
 
-var game = new Nim("p1", "p2", 1, 13, 3)
+var game = new Nim("Henrik", "Mahmoud", 1, 15, 3)
 
 
 // All Nim objects inherit from this object.
@@ -21,82 +21,112 @@ var game = new Nim("p1", "p2", 1, 13, 3)
 
 
 var total = game.total;
-var maxgrab = game.maxGrab;
+var maxgrab_p1 = game.maxGrab;
+var maxgrab_p2 = game.maxGrab;
 var player1 = game.player1;
 var player2 = game.player2;
 var victory = game.victory;
 
+document.getElementById("player1_html").innerHTML = player1;
+document.getElementById("player2_html").innerHTML = player2;
+
 function Victory(player) {
-  console.log(player + "vinner");
+  document.getElementById("win").innerHTML = (player + " vinner!") ;
 };
 
 
 function remove1() {
   total-=1;
-  maxgrab-=1;
+  maxgrab_p1-=1;
   console.log("fra", game.total,"til ",total)
-  console.log(maxgrab)
+  console.log("maxgrab1 ", maxgrab_p1, "to maxgrab 2:", maxgrab_p2)
   if (total === victory) {
-    Victory("player 1 ");
+    Victory(player1, " ");
   }
+  if (maxgrab_p1 === 0) {
+    maxgrab_p2 = 3;
+  }
+  document.getElementById("score").innerHTML = total;
   return total;
 };
 
 function remove2() {
   total-=2;
-  maxgrab-=1;
+  maxgrab_p1-=1;
   console.log("fra", game.total,"til ",total)
-  console.log(maxgrab)
+  console.log("maxgrab1 ", maxgrab_p1, "to maxgrab 2:", maxgrab_p2)
   if (total === victory) {
-    Victory("player 1 ");
+    Victory(player1, " ");
   }
+  if (maxgrab_p1 === 0) {
+    maxgrab_p2 = 3;
+  }
+  document.getElementById("score").innerHTML = total;
 };
 
 function remove3() {
   total-=3;
-  maxgrab-=1;
+  maxgrab_p1-=1;
   console.log("fra", game.total,"til ",total)
-  console.log(maxgrab)
+  console.log("maxgrab1 ", maxgrab_p1, "to maxgrab 2:", maxgrab_p2)
   if (total === victory) {
-    Victory("player 1 ");
+    Victory(player1, " ");
   }
+  if (maxgrab_p1 === 0) {
+    maxgrab_p2 = 3;
+  }
+  document.getElementById("score").innerHTML = total;
 };
 
 
 
 function remove1_2() {
   total-=1;
-  maxgrab-=1;
+  maxgrab_p2-=1;
   console.log("fra", game.total,"til ",total)
-  console.log(maxgrab)
+  console.log(maxgrab_p2, " ", maxgrab_p1)
 
   if (total === victory) {
-    Victory("player 2 ");
+    Victory(player2, " ");
   }
+  if (maxgrab_p2 === 0) {
+    maxgrab_p1 = 3;
+  }
+  document.getElementById("score").innerHTML = total;
 };
 
 function remove2_2() {
   total-=2;
-  maxgrab-=1;
+  maxgrab_p2-=1;
   console.log("fra", game.total,"til ",total)
-  console.log(maxgrab)
+  console.log(maxgrab_p2, "", maxgrab_p1)
   if (total === victory) {
-    Victory("player 2 ");
+    Victory(player2, " ");
   }
+  if (maxgrab_p2 === 0) {
+    maxgrab_p1 = 3;
+  }
+  document.getElementById("score").innerHTML = total;
 };
 
 function remove3_2() {
   total-=3;
-  maxgrab-=1;
+  maxgrab_p2-=1;
   console.log("fra", game.total,"til ",total)
-  console.log(maxgrab)
+  console.log(maxgrab_p2, "", maxgrab_p1)
   if (total === victory) {
-    Victory("player 2 ");
+    Victory(player2, " ");
   }
+  if (maxgrab_p2 === 0) {
+    maxgrab_p1 = 3;
+  }
+  document.getElementById("score").innerHTML = total;
 };
 
+document.getElementById("kuler").innerHTML = total;
 
-document.getElementById("score").innerHTML = total;
+
+
 
 
 //     total: 10;  // total skal være et heltall.//

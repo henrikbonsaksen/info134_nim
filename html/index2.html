@@ -14,14 +14,16 @@
 
         <div class="game">
           <div class="buttonRowP1">
-            <p> player 1 </p>
+            <h2><p id="player1_html"> </p></h2>
             <button onclick="remove1()" id="1_1" class="button">1</button>
             <button onclick="remove2()" id="1_2" class="button">2</button>
             <button onclick="remove3()" id="1_3" class="button">3</button>
           </div>
 
+          <br>
+
           <div class="buttonRowP2">
-            <p> player 2 </p>
+            <h2><p id="player2_html"> </p></h2>
             <button onclick="remove1_2()" id="1_1" class="button">1</button>
             <button onclick="remove2_2()" id="1_2" class="button">2</button>
             <button onclick="remove3_2()" id="1_3" class="button">3</button>
@@ -30,9 +32,18 @@
 
 
       <div>
-            <p> total marbles </p>
-            <p id="score"> total </p>
+            <p>
+              <h2>
+                Totalt antall klinkekuler spillet starter med:
+                <p id="kuler"> </p>
 
+                <br>
+                <p> Foreløpig antall klinkekuler: </p>
+              </h2>
+            </p>
+
+            <h1><p id="score">  </p></h1>
+            <h1><p id="win"> </p></h1>
       </div>
 
          <!-- same class different ID! -->
