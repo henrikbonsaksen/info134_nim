@@ -34,17 +34,16 @@ function Victory(player) {
 };
 
 //funksjonalitet til knappene:
-
 function remove1() {
     if (total > 0) {
       if (maxgrab_p1 > 0) {
         total-=1;
         maxgrab_p1-=1;
-        console.log(maxgrab_p1)
+        // console.log(maxgrab_p1) //for tracking av maxgrab
         if (total === victory) {
           Victory(player1, " ");
         }
-        if (total < 1) {
+        if (total < 1) { // om totalen er mindre enn 1, vil den andre spilleren vinne.
           Victory(player2, " ")
         }
         if (maxgrab_p1 === 0) {
@@ -60,7 +59,7 @@ function remove1() {
       if (maxgrab_p1 > 0) {
         total-=2;
         maxgrab_p1-=1;
-        console.log(maxgrab_p1)
+        // console.log(maxgrab_p1)
         if (total === victory) {
           Victory(player1, " ");
         }
@@ -80,7 +79,7 @@ function remove1() {
       if (maxgrab_p1 > 0) {
         total-=3;
         maxgrab_p1-=1;
-        console.log(maxgrab_p1)
+        // console.log(maxgrab_p1)
         if (total === victory) {
           Victory(player1, " ");
         }
@@ -102,8 +101,7 @@ function remove1() {
       if (maxgrab_p2 > 0) {
         total-=1;
         maxgrab_p2-=1;
-        console.log(maxgrab_p2)
-
+        // console.log(maxgrab_p2)
         if (total === victory) {
           Victory(player2, " ");
         }
@@ -123,7 +121,7 @@ function remove1() {
       if (maxgrab_p2 > 0) {
         total-=2;
         maxgrab_p2-=1;
-        console.log(maxgrab_p2)
+        // console.log(maxgrab_p2)
         if (total === victory) {
           Victory(player2, " ");
         }
@@ -143,7 +141,7 @@ function remove1() {
       if (maxgrab_p2 > 0) {
         total-=3;
         maxgrab_p2-=1;
-        console.log(maxgrab_p2)
+        // console.log(maxgrab_p2)
         if (total === victory) {
           Victory(player2, " ");
         }
@@ -153,23 +151,11 @@ function remove1() {
         if (maxgrab_p2 === 0) {
           maxgrab_p1 = 3;
         }
+        // if (total > 0) {
         document.getElementById("score").innerHTML = total;
+        // }
       }
     }
 };
 
 document.getElementById("score").innerHTML = total;
-
-
-
-
-
-//     total: 10;  // total skal være et heltall.//
-//     // Hvis maxGrab ikke blir gitt som argument, skal den returnere 3.
-//     if (maxGrab == undefined) maxGrab = 3;
-//
-// };
-
-// function victory() {
-//   console.log("hej");
-// }
