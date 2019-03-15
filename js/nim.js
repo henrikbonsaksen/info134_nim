@@ -9,19 +9,26 @@ function Nim(player1, player2, victory, total, maxGrab) {
     this.maxGrab = maxGrab;
 }
 
-if(max == "") throw "er tomt";
-if(isNaN(max)) throw "ikke et tall";
-if(max > 3) throw "for høyt";
-if(max < 1) throw "for lavt";
+// om feil verdier blir puttet i max grab
+if(max == "") {
+  alert("Maxgrab er tom");
+  throw "Maxgrab er tom";
+}
+if(isNaN(max)) {
+  alert("Maxgrab er ikke et tall");
+  throw "Maxgrab er ikke et tall";
+}
+if(max > 3) {
+  alert("Maxgrab er for høy");
+  throw "Maxgrab er for høy";
+}
+if(max < 1) {
+  alert("Maxgrab er for lav");
+  throw "Maxgrab er for lav";
+}
 
+// starter spillet
 var game = new Nim(name_p1, name_p2, 1, total1, max)
-
-
-
-// var player1 = new Nim (name: "", human: True); // objekt med navn og om spilleren er menneske.
-// var player2 = new Nim (name: "", human: True); // objekt med navn og om spilleren er menneske.
-
-// Når spillet er avsluttet, skal spillobjektet kalle denne.
 
 // div variabler:
 var total = game.total;
