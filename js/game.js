@@ -9,6 +9,6 @@ var name_p1 = prompt("Navn spiller 1");
 
 var name_p2 = prompt("Navn spiller 2");
 
-var max = prompt("Max_Grabby");
-
 var total1 = prompt("Hvor mange kuler vil du leke med?");
+
+var max = prompt("Maksimal pr runde?");
