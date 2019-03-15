@@ -52,7 +52,7 @@ function remove1() {
     if (total > 0) {
       if (maxgrab_p1 > 0) {
         total-=1;
-        maxgrab_p1-=1;
+        maxgrab_p1 = 0;
         // console.log(maxgrab_p1) //for tracking av maxgrab
         if (total === victory) {
           Victory(player1, " ");
@@ -72,7 +72,7 @@ function remove1() {
     if (total > 0) {
       if (maxgrab_p1 > 0) {
         total-=2;
-        maxgrab_p1-=1;
+        maxgrab_p1 = 0;
         // console.log(maxgrab_p1)
         if (total === victory) {
           Victory(player1, " ");
@@ -92,7 +92,7 @@ function remove1() {
     if (total > 0) {
       if (maxgrab_p1 > 0) {
         total-=3;
-        maxgrab_p1-=1;
+        maxgrab_p1 = 0;
         // console.log(maxgrab_p1)
         if (total === victory) {
           Victory(player1, " ");
@@ -114,7 +114,7 @@ function remove1() {
     if (total > 0) {
       if (maxgrab_p2 > 0) {
         total-=1;
-        maxgrab_p2-=1;
+        maxgrab_p2 = 0;
         // console.log(maxgrab_p2)
         if (total === victory) {
           Victory(player2, " ");
@@ -134,7 +134,7 @@ function remove1() {
     if (total > 0) {
       if (maxgrab_p2 > 0) {
         total-=2;
-        maxgrab_p2-=1;
+        maxgrab_p2 = 0;
         // console.log(maxgrab_p2)
         if (total === victory) {
           Victory(player2, " ");
@@ -154,7 +154,7 @@ function remove1() {
     if (total > 0) {
       if (maxgrab_p2 > 0) {
         total-=3;
-        maxgrab_p2-=1;
+        maxgrab_p2 = 0;
         // console.log(maxgrab_p2)
         if (total === victory) {
           Victory(player2, " ");

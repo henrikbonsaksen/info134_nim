@@ -6,6 +6,8 @@ html {
 
 }
 
+
+
 .overskrift {
   padding: 0px 2%;
   color: #f7797d;
@@ -34,10 +36,15 @@ p {
   width: auto;
   color: #f7797d;
   text-shadow: 0px -1px white;
-
-
 }
 
+.regler {
+  text-align: left;
+  text-shadow: 0px 0px 1px #C6FFDD;
+  font-weight: bold;
+  color: #f7797d;
+
+}
 
 
 .scoreboard {
