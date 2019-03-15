@@ -9,7 +9,7 @@ function Nim(player1, player2, victory, total, maxGrab) {
     this.maxGrab = maxGrab;
 }
 
-var game = new Nim("Henrik", "Mahmoud", 1, 15, 3)
+var game = new Nim(name_p1, name_p2, 1, 15, 3)
 
 // var player1 = new Nim (name: "", human: True); // objekt med navn og om spilleren er menneske.
 // var player2 = new Nim (name: "", human: True); // objekt med navn og om spilleren er menneske.
